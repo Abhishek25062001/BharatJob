@@ -1,97 +1,110 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# BharatJobs 🇮🇳
 
-# Getting Started
+BharatJobs is a comprehensive mobile application designed to connect job seekers with potential employers across India. Built with React Native, it features a modern, intuitive, and highly responsive user interface tailored for a seamless job hunting experience.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## ✨ Key Features
 
-## Step 1: Start Metro
+- **Job Discovery:** Browse personalized job recommendations and top categories right from the home screen.
+- **Advanced Search:** Find jobs by title, company, or category with real-time filtering.
+- **Application Tracking:** Keep track of all your applied jobs, interview schedules, and application statuses in one place.
+- **Direct Messaging:** Chat seamlessly with recruiters, HR managers, and hiring specialists.
+- **Profile Management:** Build and manage a professional profile, including your resume, skills, and personal information.
+- **Real-time Notifications:** Stay updated on application statuses, new messages, and scheduled interviews.
+- **Saved Jobs:** Bookmark interesting roles to apply later.
+- **Dark Mode / Theming:** Built with a scalable theming system for future aesthetic flexibility.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## 🛠️ Technology Stack
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- **Framework:** React Native (Expo/CLI)
+- **Navigation:** React Navigation (Native Stack & Bottom Tabs)
+- **State Management:** Zustand
+- **Language:** TypeScript
+- **Styling:** React Native StyleSheet (Custom Theme Tokens)
 
-```sh
-# Using npm
-npm start
+## 🚀 Getting Started
 
-# OR using Yarn
-yarn start
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+- React Native environment setup (Android Studio / Xcode)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/bharatjobs.git
+   cd bharatjobs/BharatJobs
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Install iOS CocoaPods (macOS only):
+   ```bash
+   npx pod-install
+   ```
+
+### Running the App
+
+Start the Metro bundler:
+
+```bash
+npx react-native start
 ```
 
-## Step 2: Build and run your app
+Run on iOS:
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```bash
+npx react-native run-ios
 ```
 
-### iOS
+Run on Android:
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+```bash
+npx react-native run-android
 ```
 
-Then, and every time you update your native dependencies, run:
+## 📁 Project Structure
 
-```sh
-bundle exec pod install
+```
+BharatJobs/
+├── app/
+│   ├── components/      # Reusable UI components (Button, Header, JobCard, etc.)
+│   ├── navigation/      # Navigation config (MainNavigator, RootNavigator)
+│   ├── screens/         # App screens categorized by flow (main, auth, modals)
+│   ├── store/           # Zustand state management stores
+│   ├── theme/           # Design system tokens (colors, typography)
+│   └── mockData.ts      # Sample data for UI development
+├── assets/              # Static assets like images and fonts
+├── App.tsx              # App entry point
+└── index.js             # Root register component
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## 🤝 Contributing
 
-```sh
-# Using npm
-npm run ios
+Contributions, issues, and feature requests are welcome!
 
-# OR using Yarn
-yarn ios
-```
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 📝 License
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+echo "# BharatJob" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Abhishek25062001/BharatJob.git
+git push -u origin main
